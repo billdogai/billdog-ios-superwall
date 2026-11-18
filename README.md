@@ -21,7 +21,7 @@ version, and on SuperwallKit 4.0.3 or later 4.x. With Xcode 26, use SuperwallKit
 ### Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/billdogai/billdog-ios-superwall.git", exact: "1.1.1-beta.5"),
+.package(url: "https://github.com/billdogai/billdog-ios-superwall.git", exact: "1.1.2-beta.5"),
 
 .target(name: "MyApp", dependencies: [
     .product(name: "BillDogSuperwallIntegration", package: "billdog-ios-superwall"),
@@ -29,16 +29,19 @@ version, and on SuperwallKit 4.0.3 or later 4.x. With Xcode 26, use SuperwallKit
 ```
 
 In Xcode: File → Add Package Dependencies → `https://github.com/billdogai/billdog-ios-superwall.git`,
-rule **Exact Version** `1.1.1-beta.5`, product `BillDogSuperwallIntegration`. It brings
+rule **Exact Version** `1.1.2-beta.5`, product `BillDogSuperwallIntegration`. It brings
 `BillDogFull` (from `billdog-ios-spm`) and `SuperwallKit` with it.
 
 ### CocoaPods
 
 ```ruby
-pod 'BillDogSuperwallIntegration', '1.1.1-beta.5'
+pod 'BillDogSuperwallIntegration', '1.1.2-beta.5'
 ```
 
 It depends on `BillDogFull` at the same version and on `SuperwallKit` 4.x (4.0.3 or later).
+
+**CocoaPods trunk stops accepting new pods on 2 December 2026.** Versions released after that are
+on Swift Package Manager only (above); move a CocoaPods app to SPM to keep updating.
 
 ## Use
 

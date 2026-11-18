@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "BillDogSuperwallIntegration", targets: ["BillDogSuperwallIntegration"])
     ],
     dependencies: [
-        .package(url: "https://github.com/billdogai/billdog-ios-spm.git", exact: "1.1.1-beta.5"),
+        .package(url: "https://github.com/billdogai/billdog-ios-spm.git", exact: "1.1.2-beta.5"),
         // 4.0.3: the bridge's API floor (4.0.0–4.0.2 named the event type
         // SuperwallPlacementInfo). Xcode 26 compiles SuperwallKit 4.14.0+ only.
         .package(url: "https://github.com/superwall/Superwall-iOS.git", from: "4.0.3")
